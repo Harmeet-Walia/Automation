@@ -6,9 +6,17 @@
       <class name="com.Tests.automation.TestCase1">
         <methods>
           <include name="initaiteDriver"/>
+          <include name="closeDriver"/>
           <include name="yourDestination"/>
         </methods>
       </class> <!-- com.Tests.automation.TestCase1 -->
+      <class name="com.Tests.automation.NewTest">
+        <methods>
+          <include name="Test2"/>
+          <include name="teardown"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- com.Tests.automation.NewTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

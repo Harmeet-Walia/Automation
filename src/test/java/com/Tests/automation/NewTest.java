@@ -15,14 +15,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class NewTest {
 	WebDriver driver = null;
 
-	@BeforeTest
-	public void beforeMethod() {
-
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\walia\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://automationpractice.com/index.php");
-		driver.manage().window().maximize();
-	}
+//	@BeforeTest
+//	public void beforeMethod() {
+//
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\walia\\chromedriver.exe");
+//		driver = new ChromeDriver();
+//		driver.get("http://automationpractice.com/index.php");
+//		driver.manage().window().maximize();
+//	}
 
 	@Test
 	public void Test1() {
@@ -33,7 +33,7 @@ public class NewTest {
 		System.out.println("The title is matching");
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void Test2() {
 		
 		driver.findElement(By.xpath("//a[contains(@title, 'View my shopping cart')]")).click(); 

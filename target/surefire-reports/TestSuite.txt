@@ -1,16 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.486 sec <<< FAILURE!
-yourDestination(com.Tests.automation.TestCase1)  Time elapsed: 20.073 sec  <<< FAILURE!
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 20.995 sec <<< FAILURE!
+Test1(com.Tests.automation.NewTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.Tests.automation.NewTest.Test1(NewTest.java:29)
+
+Test2(com.Tests.automation.NewTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.Tests.automation.NewTest.Test2(NewTest.java:39)
+
+yourDestination(com.Tests.automation.TestCase1)  Time elapsed: 10.06 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"your destination"}
   (Session info: chrome=76.0.3809.100)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-6EHNOHDB', ip: '172.31.98.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+System info: host: 'LAPTOP-6EHNOHDB', ip: '10.0.0.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\walia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59377}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4d368e1d6d895475393c289ab1c387cb
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\walia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e92317b18daa7c91f6be8a4d38da6d2e
 *** Element info: {Using=link text, value=your destination}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -28,5 +36,5 @@ Session ID: 4d368e1d6d895475393c289ab1c387cb
 	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at com.mercuryTours.Pages.LoginPage.clickOnYourDestination(LoginPage.java:35)
-	at com.Tests.automation.TestCase1.yourDestination(TestCase1.java:68)
+	at com.Tests.automation.TestCase1.yourDestination(TestCase1.java:86)
 

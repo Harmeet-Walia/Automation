@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation by groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GRP-login(failed)">
+    <groups>
+      <run>
+        <include name="login"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.Tests.automation.TestCase1">
+        <methods>
+          <include name="signUpWithNumbers"/>
+          <include name="yourDestination"/>
+        </methods>
+      </class> <!-- com.Tests.automation.TestCase1 -->
+    </classes>
+  </test> <!-- GRP-login(failed) -->
+</suite> <!-- Failed suite [Automation by groups] -->

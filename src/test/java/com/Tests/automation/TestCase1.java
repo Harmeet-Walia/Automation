@@ -20,17 +20,26 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.mercuryTours.Pages.LoginPage;
+import com.mercuryTours.Pages.Register;
 import com.mercuryTours.Pages.SignOnPage;
 import com.practice.automation.basetest.driverConfig;
 
 public class TestCase1 extends driverConfig {
-
-	@Test
+	
+		
+	@Test(groups={"signUp"})
 	public void signUp() {
 		LoginPage login =new LoginPage(driver);
+		Register register=new Register(driver);
 		login.clickOnRegister();
-		login.enterFirstName("SuperMom");
-		login.enterLastName("Always");
+		register.enterFirstName("Jorden");
+		register.enterLastName("Mathews");
+		register.clickOnSubmit();
+		String title= driver.getTitle();
+		Assert.assertEquals(title, "Register: Mercury Tours", "Test Passed");
+		
+		
+		
 		
 		
 //		String title = driver.getTitle();
@@ -47,18 +56,23 @@ public class TestCase1 extends driverConfig {
 //		}
 //
 //		countryDropDown.selectByVisibleText("BRAZIL");
+		//By.cssSelector(cssSelector)
 
 	}
 	
-	@Test
-	public void signUpWithNumbers() {
-		LoginPage login=new LoginPage(driver);
+	@Test(groups= {"signUp"})
+	public void signUpagain() {
+		LoginPage login =new LoginPage(driver);
+		Register register=new Register(driver);
 		login.clickOnRegister();
-		login.enterFirstName("123");
-		login.enterLastName("234");
+		register.enterFirstName("Smarty");
+		register.enterLastName("Kaur");
+		register.clickOnSubmit();
+		String title= driver.getTitle();
+		Assert.assertEquals(title, "Register: Mercury Tours", "Test Passed");
 	}
 	
-	@Test
+	@Test (groups= {"signOn"})
 	public void signOn() {
 	   SignOnPage signOnPage=new SignOnPage(driver);
 	   signOnPage.clickOnSignOn();
@@ -67,12 +81,12 @@ public class TestCase1 extends driverConfig {
 	   signOnPage.clickOnSubmit();
 	}
 	
-	@Test
+	@Test  (groups= {"login"}) 
 	public void yourDestination() {
 		LoginPage login=new LoginPage(driver);
 		login.clickOnYourDestination();
 		String title=driver.getTitle();
-		Assert.assertEquals(title, "Under Construction: Mercury ours");
+		Assert.assertEquals(title, "Under Construction: Mercury Tours");
 		System.out.println("The title is "+ title);
 	}
 

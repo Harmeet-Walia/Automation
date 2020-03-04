@@ -1,120 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-28T17:36:40Z" name="Suite" finished-at="2019-08-28T17:40:03Z" duration-ms="202751">
+  <suite started-at="2020-03-03T21:32:10Z" name="Default suite" finished-at="2020-03-03T21:32:17Z" duration-ms="6737">
     <groups>
-      <group name="signOn">
-        <method signature="TestCase1.signOn()[pri:0, instance:com.Tests.automation.TestCase1@6f3b5d16]" name="signOn" class="com.Tests.automation.TestCase1"/>
-      </group> <!-- signOn -->
-      <group name="login">
-        <method signature="TestCase1.yourDestination()[pri:0, instance:com.Tests.automation.TestCase1@6f3b5d16]" name="yourDestination" class="com.Tests.automation.TestCase1"/>
-      </group> <!-- login -->
-      <group name="signUp">
-        <method signature="TestCase1.signUp()[pri:0, instance:com.Tests.automation.TestCase1@6f3b5d16]" name="signUp" class="com.Tests.automation.TestCase1"/>
-        <method signature="TestCase1.signUpagain()[pri:0, instance:com.Tests.automation.TestCase1@6f3b5d16]" name="signUpagain" class="com.Tests.automation.TestCase1"/>
-      </group> <!-- signUp -->
     </groups>
-    <test started-at="2019-08-28T17:36:40Z" name="Test" finished-at="2019-08-28T17:40:03Z" duration-ms="202751">
-      <class name="com.Tests.automation.TestCase1">
-        <test-method is-config="true" signature="initaiteDriver()[pri:0, instance:com.Tests.automation.TestCase1@6f3b5d16]" started-at="2019-08-28T17:36:40Z" name="initaiteDriver" finished-at="2019-08-28T17:36:45Z" duration-ms="4459" status="PASS">
+    <test started-at="2020-03-03T21:32:10Z" name="Default test" finished-at="2020-03-03T21:32:17Z" duration-ms="6737">
+      <class name="com.Tests.automation.facebook">
+        <test-method is-config="true" signature="initaiteDriver()[pri:0, instance:com.Tests.automation.facebook@358c99f5]" started-at="2020-03-03T21:32:10Z" name="initaiteDriver" finished-at="2020-03-03T21:32:17Z" duration-ms="6363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initaiteDriver -->
-        <test-method signature="signOn()[pri:0, instance:com.Tests.automation.TestCase1@6f3b5d16]" started-at="2019-08-28T17:36:45Z" name="signOn" finished-at="2019-08-28T17:36:47Z" duration-ms="1665" status="PASS">
+        <test-method signature="testLogin()[pri:0, instance:com.Tests.automation.facebook@358c99f5]" started-at="2020-03-03T21:32:17Z" name="testLogin" finished-at="2020-03-03T21:32:17Z" duration-ms="351" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signOn -->
-        <test-method signature="signUp()[pri:0, instance:com.Tests.automation.TestCase1@6f3b5d16]" started-at="2019-08-28T17:36:47Z" name="signUp" finished-at="2019-08-28T17:38:25Z" duration-ms="98274" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUp -->
-        <test-method signature="signUpagain()[pri:0, instance:com.Tests.automation.TestCase1@6f3b5d16]" started-at="2019-08-28T17:38:25Z" name="signUpagain" finished-at="2019-08-28T17:39:52Z" duration-ms="87519" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpagain -->
-        <test-method signature="yourDestination()[pri:0, instance:com.Tests.automation.TestCase1@6f3b5d16]" started-at="2019-08-28T17:39:52Z" name="yourDestination" finished-at="2019-08-28T17:40:03Z" duration-ms="10134" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"your destination"}
-  (Session info: chrome=76.0.3809.100)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-6EHNOHDB', ip: '10.0.0.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\walia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61168}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0b11efa106dba665c1021a2123d1ab6d
-*** Element info: {Using=link text, value=your destination}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"your destination"}
-  (Session info: chrome=76.0.3809.100)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-6EHNOHDB', ip: '10.0.0.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\walia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61168}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0b11efa106dba665c1021a2123d1ab6d
-*** Element info: {Using=link text, value=your destination}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.mercuryTours.Pages.LoginPage.clickOnYourDestination(LoginPage.java:35)
-at com.Tests.automation.TestCase1.yourDestination(TestCase1.java:86)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- yourDestination -->
-      </class> <!-- com.Tests.automation.TestCase1 -->
-      <class name="com.Tests.automation.NewTest">
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Tests.automation.NewTest@475e586c]" started-at="2019-08-28T17:40:03Z" name="teardown" finished-at="2019-08-28T17:40:03Z" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.Tests.automation.TestCase1@6f3b5d16]" started-at="2019-08-28T17:40:03Z" name="closeDriver" finished-at="2019-08-28T17:40:03Z" duration-ms="637" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- com.Tests.automation.NewTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testLogin -->
+      </class> <!-- com.Tests.automation.facebook -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

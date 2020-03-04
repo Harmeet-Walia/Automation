@@ -19,9 +19,9 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.mercuryTours.Pages.LoginPage;
-import com.mercuryTours.Pages.Register;
-import com.mercuryTours.Pages.SignOnPage;
+import com.Facebook.LoginPage;
+import com.Facebook.Register;
+import com.Facebook.SignOnPage;
 import com.practice.automation.basetest.driverConfig;
 
 public class TestCase1 extends driverConfig {

@@ -1,4 +1,4 @@
-package com.mercuryTours.Pages;
+package com.Facebook;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

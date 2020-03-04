@@ -5,7 +5,9 @@
     <classes>
       <class name="com.Tests.automation.TestCase1">
         <methods>
+          <include name="signUp"/>
           <include name="initaiteDriver"/>
+          <include name="signUpagain"/>
           <include name="closeDriver"/>
           <include name="yourDestination"/>
         </methods>

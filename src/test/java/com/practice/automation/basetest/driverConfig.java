@@ -14,14 +14,14 @@ public class driverConfig {
 	public void initaiteDriver() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\walia\\SeleniumDrivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://newtours.demoaut.com/");
+		driver.get("http://www.facebook.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	@AfterTest(alwaysRun = true)
-	public void closeDriver() {
-		driver.quit();
-	}
+//	@AfterTest(alwaysRun = true)
+//	public void closeDriver() {
+//		driver.quit();
+//	}
 
 }

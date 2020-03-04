@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -42,6 +44,14 @@ public class NewTest {
 		System.out.println("Test case passed..Hurray!!");
 		
 		
+	}
+	
+	public void Test3() {
+		System.setProperty("Key", "000");
+		System.getProperty("Key");
+		Set<String> windowHandles =driver.getWindowHandles();
+		int num=windowHandles.size();
+		System.out.println(num);
 	}
 	
 	@AfterTest

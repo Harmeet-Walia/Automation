@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Tests.automation.TestCase1">
+      <class name="com.Tests.automation.facebook">
         <methods>
+          <include name="testLogin"/>
           <include name="initaiteDriver"/>
           <include name="closeDriver"/>
-          <include name="yourDestination"/>
         </methods>
-      </class> <!-- com.Tests.automation.TestCase1 -->
+      </class> <!-- com.Tests.automation.facebook -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
